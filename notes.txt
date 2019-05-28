@@ -1,0 +1,33 @@
+Resources:
+1) Bixby for beginners — A guide to creating a basic Bixby project.
+https://medium.com/@jamierobertdawson/bixby-for-beginners-a-guide-to-creating-a-basic-bixby-project-34b66bad31e0
+
+Download Bixby Developer Studio: https://bixbydevelopers.com/
+
+1) Add Workspace -> create name for Capsule ID, e.g. playground.new -> create ->
+-> see 2 empty folders (“code” and “resources”) and a capsule.bxb file that contains the name of your Capsule ID ->
+2)  At the parent layer of your capsule, create a folder called models. Then create a folder called primitives inside of models. -> 
+-> Right click on the primitives folder and select new->model -> 
+-> Name the first file firstNumber.model.bxb, second file secondNumber.model.bxb, third file operator.model.bxb, and the last file total.model.bxb. -> 
+-> Inside the models folder, create a folder called actions. -> Then create a new model inside of actions called grabTotal.model.bxb. ->
+3) Right click on the code folder and select new->Action Javascript. -> write a simple Javascript function to handle 1 plus 3.
+4) We need to create an endpoint (The place where you’re implementing the actual action, taking that actions input, and then returning the output.)
+At the resources folder, right click on it and create a new folder called en. Then right click on end and select new->Endpoints. I just named my file endpoints.bxb.
+5)  test our our code (click on Simulator icon on the left sidebar).
+        intent{
+            goal: playground.new.grabTotal
+            value: playground.new.firstNumberConcept(1)
+            value: playground.new.secondNumberConcept(2)
+            value: playground.new.operatorConcept(plus)
+        }
+
+        OR 
+
+        one plus two    // add training
+6) Right click on the en folder (located inside the resources folder) and select new->Training. No need to change the name. Just click the Create button.
+Once you’ve applied the concepts to each value, click the compile button and test your code again.
+
+
+
+*** “concepts”. You can think of them as data types and data structures in a programming language.
+*** The difference between primitives and actions is that primitives define what things are. Where are actions define what things do. 
