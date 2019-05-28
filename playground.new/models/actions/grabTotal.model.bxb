@@ -1,0 +1,18 @@
+action (grabTotal) {
+  description (Gets both firstNumber and secondNumber)
+  collect {
+    input (firstNumber) {
+      type (firstNumberConcept)
+      min (Required) max (One)
+    }
+    input (secondNumber) {
+      type (secondNumberConcept)
+      min (Required) max (One)
+    }
+    input (operator) {
+      type (operatorConcept)
+    }
+  }
+  output (totalConcept)
+  type(Calculation)
+}

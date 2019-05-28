@@ -1,0 +1,5 @@
+train (t-v3ztzy46ls3c9puo30pjc75ny) {
+  utterance ("[g:grabTotal] (1)[v:firstNumberConcept] (plus)[v:operatorConcept] (2)[v:secondNumberConcept]")
+  plan (Y2BlkC7ISaxML8ovzUvRy0st1yvJL0nMcc7PS04tKGGQQJNML0pMCgEpYFBEk0nLLCou8SvNTUotgmmWQ1OSX5BalFiSD5dXQpMvTk3Oz0tBNYOFgZGBiYEZSDMAWRAIA0hyAA==)
+  last-modified (1559084102106)
+}
